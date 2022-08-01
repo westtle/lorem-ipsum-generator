@@ -1,0 +1,91 @@
+* {
+	color: rgba(0, 0, 0, 0.9);
+	box-sizing: border-box;
+}
+
+body {
+	margin: 24px;
+}
+
+.generator__lorem-ipsum {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 12px;
+}
+
+.lorem-ipsum_generated {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	height: 400px;
+	margin-right: 8px;
+	padding: 20px 24px;
+	box-shadow: 0.2px 0.2px 3px rgba(0, 0, 0, 0.4);
+	text-align: justify;
+	outline: none;
+	resize: none;
+	overflow-y: scroll ;
+}
+
+.lorem-ipsum_button {
+	position: relative;
+}
+
+.lorem-ipsum_button h4 {
+	margin: 0 0 6px 0;
+}
+
+.lorem-ipsum_button div {
+	padding: 0 12px;
+	position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.lorem-ipsum_button input[type="radio"] {
+	margin: 6px 0;
+}
+
+.lorem-ipsum_button input[type="number"] {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	width: 50px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.lorem-ipsum_button label {
+	cursor: pointer;
+}
+
+.lorem-ipsum_button button {
+	background: none;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	margin-top: 8px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+/* About Lorem Ipsum. */
+
+.about__lorem-ipsum {
+	max-width: 900px;
+	margin: 28px auto;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.about__lorem-ipsum blockquote {
+	text-align: justify;
+}
+
+.about__lorem-ipsum h3 {
+	text-align: left;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+}

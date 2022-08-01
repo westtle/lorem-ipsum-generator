@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Generate random words.">
+  	<meta name="author" content="westtle">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lorem Ipsum Generator</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+</head>
+<body>
+	<main>
+		<div id="lorem-ipsum-generator">
+			<div class="generator__lorem-ipsum">
+				<textarea class="lorem-ipsum_generated" readonly>Lorem ipsum...</textarea>
+				<div class="lorem-ipsum_button">
+					<div>
+						<h4>Paragraphs</h4>
+						<input type="radio" id="radio-short" name="type" checked>
+						<label for="radio-short">Short</label>
+						<br>
+						<input type="radio" id="radio-medium" name="type">
+						<label for="radio-medium">Medium</label>
+						<br>
+						<input type="radio" id="radio-long" name="type">
+						<label for="radio-long">Long</label>
+						<br>
+						<input type="number" id="number-of-paragraph" value="3" min="1">
+						<button id="button-generate">Generate</button>
+						<button id="button-select-all">Select All</button>
+						<button id="button-copy-all">Copy All</button>
+					</div>
+				</div>
+			</div>
+			<div class="about__lorem-ipsum">
+				<h2>What is Lorem Ipsum?</h2>
+				<blockquote>
+					In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+					<h3>Example text:</h3>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<br>
+					<br>
+					From: <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">https://en.wikipedia.org/wiki/Lorem_ipsum</a>
+				</blockquote>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>REST API: <a href="https://loripsum.net" target="_blank">https://loripsum.net</a></p>
+	</footer>
+
+	<script type="text/javascript" src="assets/scripts/script.js"></script>
+</body>
+</html>
