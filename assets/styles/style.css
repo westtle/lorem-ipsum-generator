@@ -31,20 +31,16 @@ main {
 }
 
 #lorem-ipsum-generator {
+	max-width: 600px;
 	margin: 4.5vh auto;
 }
 
 .__generator {
-	/*display: grid;*/
-	/*grid-template-rows: 2fr 1fr;*/
-	/*min-height: 400px;*/
 	border: var(--border-shorthand);
-	max-width: 600px;
-	margin: 0 auto;
 	padding: var(--unit-two);
 }
 
-._generated {
+._generated textarea {
 	display: block;
 	border-radius: 0;
 	height: 280px;
@@ -57,7 +53,7 @@ main {
 	overflow-y: scroll;
 }
 
-.row {
+._options > div {
 	display: grid;
 	grid-template-columns: 1fr 2.5fr;
 }
@@ -87,7 +83,6 @@ main {
 	border: var(--border-shorthand);
 	border-top: none;
 	border-bottom: none;
-	/*width: 100%;*/
 	padding: var(--unit-one) var(--unit-two);
 	font-size: var(--font-size-button);
 	font-style: italic;
@@ -98,8 +93,8 @@ main {
 }
 
 .-paragraph-number input:nth-child(1) {
-	width: 100%;
 	border-right: none;
+	width: 100%;
 	padding-right: 0;
 }
 
@@ -110,7 +105,6 @@ main {
 	font-style: italic;
 	text-align: right;
 }
-
 
 .-generate {
 	background: none;
@@ -128,7 +122,7 @@ main {
 	}
 }
 
-/* About Lorem Ipsum. */
+/* About Lorem Ipsum */
 
 .about__lorem-ipsum {
 	max-width: 900px;
