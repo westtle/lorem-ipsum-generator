@@ -49,7 +49,7 @@ main {
 	font-size: var(--font-size-button);
 	text-align: justify;
 	outline: none;
-	resize: none;
+	resize: vertical;
 	overflow-y: scroll;
 }
 
