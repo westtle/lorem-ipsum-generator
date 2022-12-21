@@ -124,18 +124,11 @@ main {
 
 /* About Lorem Ipsum */
 
-.about__lorem-ipsum {
-	max-width: 900px;
-	margin: 28px auto;
-	margin-bottom: 45px;
-	text-align: center;
-}
-
-.about__lorem-ipsum blockquote {
+.__about p {
 	text-align: justify;
 }
 
-.about__lorem-ipsum h3 {
+.__about h3 {
 	text-align: left;
 }
 
