@@ -34,26 +34,24 @@ main {
 	margin: 4.5vh auto;
 }
 
-.generator__lorem-ipsum {
+.__generator {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
-	border: 1px solid rgba(0, 0, 0, 0.5);
-	max-width: 950px;
+	grid-template-rows: 2fr 1fr;
+	/*grid-gap: 1rem;*/
+	border: var(--border-shorthand);
+	max-width: 600px;
 	margin: 0 auto;
-	padding: 12px;
+	padding: var(--unit-two);
 }
 
-.lorem-ipsum_generated {
-	border: none;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-	height: 400px;
-	margin-right: 8px;
-	padding: 20px 24px;
-	box-shadow: 0.2px 0.2px 3px rgba(0, 0, 0, 0.4);
+._generated {
+	border-radius: 0;
+	padding: var(--unit-one) var(--unit-two);
+	font-size: var(--font-size-button);
 	text-align: justify;
 	outline: none;
 	resize: none;
-	overflow-y: scroll ;
+	overflow-y: scroll;
 }
 
 .lorem-ipsum_button {
