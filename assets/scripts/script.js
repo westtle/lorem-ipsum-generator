@@ -5,6 +5,8 @@ const paragraphLength = document.querySelector(".-paragraph-length");
 const paragraphNumber = document.querySelector(".-paragraph-number input[type=number]");
 const generateButton = document.querySelector(".-generate");
 
+const copyButton = document.querySelector(".-copy");
+
 function generateText() {
     let length = paragraphLength.value;
     let amount = paragraphNumber.value;
@@ -21,7 +23,13 @@ function generateText() {
         .catch(err => generatorBody.textContent = err);
 };
 
+function copyText() {
+    generatorBody.select();
+    navigator.clipboard.writeText(generatorBody.value);
+};
+
 generateButton.addEventListener("click", generateText);
+copyButton.addEventListener("click", copyText);
 
 document.addEventListener("DOMContentLoaded", () => {
     generateText();

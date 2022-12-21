@@ -38,6 +38,8 @@ main {
 .__generator {
 	border: var(--border-shorthand);
 	padding: var(--unit-two);
+
+	position: relative;
 }
 
 ._generated textarea {
@@ -115,10 +117,25 @@ main {
 	cursor: pointer;
 }
 
+.-copy {
+	font-size: var(--font-size-second);
+	text-decoration: underline;
+	opacity: 0.6;
+	cursor: pointer;
+
+	position: absolute;
+	top: -0.938rem;
+	right: 0;
+}
+
 @media (hover: hover) {
 	.-generate:hover {
 		color: var(--button-hover-color);
 		background: var(--button-hover-backround);
+	}
+
+	.-copy:hover {
+		opacity: 1;
 	}
 }
 
