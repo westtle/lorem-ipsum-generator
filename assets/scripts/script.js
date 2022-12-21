@@ -17,7 +17,8 @@ function generateText() {
         .then((response) => response.text())
         .then((data) => {
             generatorBody.textContent = data.trimEnd();
-        });
+        })
+        .catch(err => generatorBody.textContent = err);
 };
 
 generateButton.addEventListener("click", generateText);
