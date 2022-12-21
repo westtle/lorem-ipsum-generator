@@ -1,12 +1,9 @@
-const shortRadio = document.querySelector("#radio-short");
-const mediumRadio = document.querySelector("#radio-medium");
-const longRadio = document.querySelector("#radio-long");
+// HTML
+const generatorBody = document.querySelector("._generated textarea");
 
-const generatedDiv = document.querySelector(".lorem-ipsum_generated");
-
-const buttonGenerate = document.querySelector("#button-generate");
-const buttonSelectAll = document.querySelector("#button-select-all");
-const buttonCopyAll = document.querySelector("#button-copy-all");
+const paragraphLength = document.querySelector(".-paragraph-length");
+const paragraphNumber = document.querySelector(".-paragraph-number input[type=number]");
+const generateButton = document.querySelector(".-generate");
 
 buttonGenerate.addEventListener("click", generateText)
 buttonSelectAll.addEventListener("click", () => {
