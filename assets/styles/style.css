@@ -31,7 +31,7 @@ main {
 }
 
 #lorem-ipsum-generator {
-	max-width: 600px;
+	max-width: 37.5rem;
 	margin: 4.5vh auto;
 }
 
@@ -43,7 +43,7 @@ main {
 ._generated textarea {
 	display: block;
 	border-radius: 0;
-	height: 280px;
+	height: 17.5rem;
 	width: 100%;
 	padding: var(--unit-one) var(--unit-two);
 	font-size: var(--font-size-button);
@@ -100,7 +100,7 @@ main {
 
 .-paragraph-number input:nth-child(2) {
 	border-left: none;
-	width: 80px;
+	width: 5rem;
 	padding-left: 0;
 	font-style: italic;
 	text-align: right;
@@ -108,7 +108,7 @@ main {
 
 .-generate {
 	background: none;
-	border: 1px solid var(--border-main);
+	border: var(--border-shorthand);
 	width: 100%;
 	padding: var(--unit-one) var(--unit-two);
 	font-size: var(--font-size-button);
