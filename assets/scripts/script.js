@@ -5,47 +5,23 @@ const paragraphLength = document.querySelector(".-paragraph-length");
 const paragraphNumber = document.querySelector(".-paragraph-number input[type=number]");
 const generateButton = document.querySelector(".-generate");
 
-buttonGenerate.addEventListener("click", generateText)
-buttonSelectAll.addEventListener("click", () => {
-    generatedDiv.select();
-});
-buttonCopyAll.addEventListener("click", () => {
-    navigator.clipboard.writeText(generatedDiv.value);
-
-    buttonCopyAll.innerText = "Copied!";
-
-    setTimeout(() => buttonCopyAll.innerText = "Copy All", 800);
-});
-
 function generateText() {
-    let numberOfParagraph = document.querySelector("#number-of-paragraph").value;
-    let paragraphLength;
+    let length = paragraphLength.value;
+    let amount = paragraphNumber.value;
 
-    if (shortRadio.checked) {
-        paragraphLength = "short";
-    } else if (mediumRadio.checked) {
-        paragraphLength = "medium";
-    } else if (longRadio.checked) {
-        paragraphLength = "long";
-    };
-
-    if (numberOfParagraph === "" || numberOfParagraph < 1) {
-        numberOfParagraph = 1;
-    };
+    if (amount == "" || amount < 1) amount = 1;;
 
     // Fetch Data.
-
     let url = "https://loripsum.net/api/";
-    const corsProxy = "https://api.codetabs.com/v1/proxy?quest=";
-    let userValue = `${corsProxy}${url}${numberOfParagraph}/${paragraphLength}/plaintext`;
-
-    fetch(userValue)
-    .then((response) => response.text())
-    .then((data) => {
-        loremIpsum = data;
-        loremIpsumTrimmed = loremIpsum.trimEnd();
-        generatedDiv.textContent = loremIpsumTrimmed;
-    });
+    fetch(`${url}${amount}/${length}/plaintext`)
+        .then((response) => response.text())
+        .then((data) => {
+            generatorBody.textContent = data.trimEnd();
+        });
 };
 
-document.body.addEventListener("DOMContentLoaded", generateText());
+generateButton.addEventListener("click", generateText);
+
+document.addEventListener("DOMContentLoaded", () => {
+    generateText();
+});
