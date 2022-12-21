@@ -132,8 +132,11 @@ main {
 	text-align: left;
 }
 
-/* Footer */
+/* Notice / Link */
 
-footer {
+.__notice {
+	padding: 0 var(--unit-one);
+	font-size: var(--font-size-second);
 	text-align: center;
+	word-wrap: break-word;
 }
