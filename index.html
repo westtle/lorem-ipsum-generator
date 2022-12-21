@@ -17,21 +17,19 @@
 			<div class="__generator">
 				<textarea class="_generated" readonly>Lorem ipsum...</textarea>
 				<div class="_options">
-					<div>
-						<h4>Paragraphs</h4>
-						<input type="radio" id="radio-short" name="type" checked>
-						<label for="radio-short">Short</label>
-						<br>
-						<input type="radio" id="radio-medium" name="type">
-						<label for="radio-medium">Medium</label>
-						<br>
-						<input type="radio" id="radio-long" name="type">
-						<label for="radio-long">Long</label>
-						<br>
-						<input type="number" id="number-of-paragraph" value="3" min="1">
-						<button id="button-generate">Generate</button>
-						<button id="button-copy-all">Copy All</button>
+					<div class="row">
+						<select class="-paragraph-length">
+							<option>Short</option>
+							<option selected>Medium</option>
+							<option>Long</option>
+						</select>
+						<div class="-paragraph-number">
+							<input class="" type="number" value="3" min="1">
+							<input type="text" value="Paragraph" readonly>
+						</div>
 					</div>
+					<button class="-generate">Generate</button>
+					<!-- <button class="-copy">Copy All</button> -->
 				</div>
 			</div>
 			<div class="__about">
