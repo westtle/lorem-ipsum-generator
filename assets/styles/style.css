@@ -170,3 +170,13 @@ main {
 		display: none;
 	}
 }
+
+@media (max-width: 30rem) { /* 480px */
+	html {
+		font-size: calc(1rem - 10%);
+	}
+
+	.-copy {
+		top: -1rem;
+	}
+}
