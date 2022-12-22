@@ -61,6 +61,7 @@ main {
 }
 
 .-paragraph-length {
+	background: none;
 	border: none;
 	border-left: var(--border-shorthand);
 	border-radius: 0;
@@ -129,6 +130,10 @@ main {
 }
 
 /* About Lorem Ipsum */
+
+.__about h2 {
+	text-align: center;
+}
 
 .__about p {
 	text-align: justify;
