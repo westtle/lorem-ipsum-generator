@@ -26,6 +26,7 @@ function generateText() {
 
 function copyText() {
     generatorBody.select();
+    generatorBody.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(generatorBody.value);
 };
 
