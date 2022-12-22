@@ -15,7 +15,7 @@
 	--unit-two: 0.75rem; /* 12px */
 }
 
-* {
+*, *::before, *::after {
 	color: var(--color-main);
 	box-sizing: border-box;
 }
@@ -128,17 +128,6 @@ main {
 	right: 0;
 }
 
-@media (hover: hover) {
-	.-generate:hover {
-		color: var(--button-hover-color);
-		background: var(--button-hover-backround);
-	}
-
-	.-copy:hover {
-		opacity: 1;
-	}
-}
-
 /* About Lorem Ipsum */
 
 .__about p {
@@ -157,6 +146,18 @@ main {
 	font-size: var(--font-size-second);
 	text-align: center;
 	word-wrap: break-word;
+}
+
+/* Media Query */
+@media (hover: hover) {
+	.-generate:hover {
+		color: var(--button-hover-color);
+		background: var(--button-hover-backround);
+	}
+
+	.-copy:hover {
+		opacity: 1;
+	}
 }
 
 @media (max-width: 16.875rem) { /* 270px */
