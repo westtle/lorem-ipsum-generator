@@ -14,8 +14,9 @@ function generateText() {
     if (amount == "" || amount < 1) amount = 1;;
 
     // Fetch Data.
-    let url = "https://loripsum.net/api/";
-    fetch(`${url}${amount}/${length}/plaintext`)
+    const url = "https://loripsum.net/api/";
+    const corsProxy = "https://api.codetabs.com/v1/proxy?quest=";
+    fetch(`${corsProxy}${url}${amount}/${length}/plaintext`)
         .then((response) => response.text())
         .then((data) => {
             generatorBody.textContent = data.trimEnd();
