@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 }
 
-body {
+body { /* Left & right spacing is left & right from default body margin + 12px */
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: var(--unit-two);
@@ -39,6 +39,8 @@ main {
 	position: relative;
 }
 
+/* Body / textarea With The Generated Texts */
+
 ._generated textarea {
 	display: block;
 	border-radius: 0;
@@ -51,6 +53,8 @@ main {
 	resize: vertical;
 	overflow-y: scroll;
 }
+
+/* All Buttons (Paragraph Length & Amount) */
 
 ._options > div {
 	display: grid;
@@ -151,6 +155,7 @@ main {
 }
 
 /* Media Query */
+
 @media (hover: hover) {
 	.-generate:hover {
 		color: var(--button-hover-color);
@@ -162,6 +167,18 @@ main {
 	}
 }
 
+/* Font Size */
+@media (max-width: 30rem) { /* 480px */
+	html {
+		font-size: calc(1rem - 10%);
+	}
+
+	.-copy {
+		top: -1rem;
+	}
+}
+/* -------- */
+
 @media (max-width: 16.875rem) { /* 270px */
 	.-paragraph-number input:nth-child(1) {
 		border-right: var(--border-shorthand);
@@ -170,15 +187,5 @@ main {
 
 	.-paragraph-number input:nth-child(2) {
 		display: none;
-	}
-}
-
-@media (max-width: 30rem) { /* 480px */
-	html {
-		font-size: calc(1rem - 10%);
-	}
-
-	.-copy {
-		top: -1rem;
 	}
 }

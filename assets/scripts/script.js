@@ -1,4 +1,4 @@
-// HTML
+// HTML.
 const generatorBody = document.querySelector("._generated textarea");
 
 const paragraphLength = document.querySelector(".-paragraph-length");
