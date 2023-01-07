@@ -1,11 +1,11 @@
 // HTML.
 const generatorBody = document.querySelector("._generated textarea");
 
-const paragraphLength = document.querySelector(".-paragraph-length");
-const paragraphNumber = document.querySelector(".-paragraph-number input[type=number]");
-const generateButton = document.querySelector(".-generate");
+const paragraphLength = document.querySelector(".paragraph-length_");
+const paragraphNumber = document.querySelector(".paragraph-number_ input[type=number]");
+const generateButton = document.querySelector(".generate_");
 
-const copyButton = document.querySelector(".-copy");
+const copyButton = document.querySelector(".copy_");
 
 function generateText() {
     let length = paragraphLength.value;
