@@ -23,14 +23,11 @@
 body {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: var(--unit-two);
 	font-size: var(--font-size-main);
 }
 
 main {
-	padding: var(--unit-two);
-}
-
-#lorem-ipsum-generator {
 	max-width: 37.5rem;
 	margin: 4.5vh auto;
 }
