@@ -25,6 +25,7 @@ body { /* Left & right spacing is left & right from default body margin + 12px *
 	margin-bottom: 0;
 	padding: var(--unit-two);
 	font-size: var(--font-size-main);
+	text-align: center;
 }
 
 main {
@@ -146,11 +147,10 @@ main {
 
 /* Notice / Link */
 
-.__notice {
+#notice {
 	margin-top: 0.625rem;
 	padding: 0 var(--unit-one);
 	font-size: var(--font-size-second);
-	text-align: center;
 	line-height: 1.1;
 	word-wrap: break-word;
 }
