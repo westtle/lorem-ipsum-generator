@@ -165,25 +165,24 @@ main {
 	}
 }
 
-/* Font Size */
 @media (max-width: 30rem) { /* 480px */
+	/* Font Size */
 	html {
 		font-size: calc(1rem - 10%);
 	}
+	/* -------- */
 
 	.copy_ {
 		top: -1rem;
 	}
-}
-/* -------- */
 
-@media (max-width: 16.875rem) { /* 270px */
-	.paragraph-number_ input:nth-child(1) {
-		border-right: var(--border-shorthand);
-		padding-right: var(--twelve);
+	._options > div {
+		grid-template-columns: 1fr;
 	}
 
-	.paragraph-number_ input:nth-child(2) {
-		display: none;
+	.paragraph-length_ {
+		border-top: var(--border-shorthand);
+		border-right: var(--border-shorthand);
+		order: 2;
 	}
 }
